@@ -1,0 +1,183 @@
+.skills {
+    .container {
+        width: 50%;
+
+        .skill {
+            margin-bottom: 1rem;
+
+            .head {
+                background: $primary-color;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                color: $white-color;
+                padding: 1.6rem;
+                cursor: pointer;
+
+                .left {
+                    display: flex;
+                    align-items: center;
+                    gap: 1rem;
+                }
+
+                h4 {
+                    color: $white-color;
+                }
+            }
+
+
+
+            .items {
+                display: none;
+
+
+                &.show-items {
+                    display: block;
+                }
+
+                .item {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: start;
+                    gap: 1rem;
+                    padding: 1.6rem;
+                    background: $light-color;
+                    margin-bottom: 0.3rem;
+                    transition: all 300ms ease;
+                    -webkit-transition: all 300ms ease;
+                    -moz-transition: all 300ms ease;
+                    -ms-transition: all 300ms ease;
+                    -o-transition: all 300ms ease;
+
+                    &:hover {
+                        background: $white-color;
+                    }
+
+                    .progress-area {
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        gap: 1rem;
+
+                        .progress-bar {
+                            width: 100%;
+                            height: 1rem;
+                            background: $praimary-color-variant;
+
+                            .progress {
+                                height: 100%;
+                                width: 92%;
+                                background: $primary-color;
+                            }
+                        }
+                    }
+
+                    &:nth-child(2) {
+                        .progress-bar {
+                            .progress {
+                                width: 85%;
+                            }
+                        }
+                    }
+
+                    &:nth-child(3) {
+                        .progress-bar {
+                            .progress {
+                                width: 80%;
+                            }
+                        }
+                    }
+
+                }
+            }
+
+            &:nth-child(2) {
+                .items {
+                    .item:nth-child(2) {
+                        .progress-area {
+                            .progress-bar {
+                                .progress {
+                                    width: 88%;
+                                }
+                            }
+                        }
+                    }
+
+                    .item:nth-child(3) {
+                        .progress-area {
+                            .progress-bar {
+                                .progress {
+                                    width: 85%;
+                                }
+                            }
+                        }
+                    }
+
+                    .item:nth-child(4) {
+                        .progress-area {
+                            .progress-bar {
+                                .progress {
+                                    width: 80%;
+                                }
+                            }
+                        }
+                    }
+
+                    .item:nth-child(5) {
+                        .progress-area {
+                            .progress-bar {
+                                .progress {
+                                    width: 82%;
+                                }
+                            }
+                        }
+                    }
+
+                    .item:nth-child(6) {
+                        .progress-area {
+                            .progress-bar {
+                                .progress {
+                                    width: 75%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            &:nth-child(3) {
+                .items {
+                    .item:nth-child(1) {
+                        .progress-area {
+                            .progress-bar {
+                                .progress {
+                                    width: 90%;
+                                }
+                            }
+                        }
+                    }
+
+                    .item:nth-child(2) {
+                        .progress-area {
+                            .progress-bar {
+                                .progress {
+                                    width: 70%;
+                                }
+                            }
+                        }
+                    }
+
+
+                }
+            }
+        }
+    }
+}
+
+@media screen and(max-width: 600px) {
+    .skills {
+        .container {
+            width: 94%;
+        }
+    }
+}

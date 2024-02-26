@@ -1,0 +1,48 @@
+.about {
+    background: $light-color;
+
+    p {
+        margin-bottom: 1rem;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 26rem auto;
+        gap: 5rem;
+        text-align: justify;
+
+        .read-more-content {
+            display: none;
+
+            &.show-content {
+                display: block;
+            }
+        }
+
+        .read-more {
+            display: block;
+            margin: 1rem 0 2rem;
+            color: $primary-color;
+            cursor: pointer;
+
+            &:hover {
+                text-decoration: underline;
+            }
+
+        }
+
+        .bx-download {
+            margin-right: 0.3rem;
+        }
+    }
+}
+
+@media screen and(max-width: 1024px) {
+    .about {
+        .container {
+            grid-template-columns: 1fr;
+            gap: 1rem;
+            text-align: center;
+        }
+    }
+}

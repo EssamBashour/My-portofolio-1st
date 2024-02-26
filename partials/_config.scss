@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+$primary-color: #f24e1e;
+$praimary-color-variant: rgba($primary-color, 0.3);
+$secondary-color: #f72585;
+$white-color: #ffffff;
+$light-color: #f4f4f4;
+$black-color: #141415;
+$dark-color: #525252;
+$success-color: #29f5a6;
+$warning-color: #ffce31;
+$container-lg: 82%;
+$container-md: 90%;
