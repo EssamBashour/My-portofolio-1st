@@ -177,7 +177,7 @@ nav {
     -webkit-box-shadow: 0 0.6rem 1rem rgba(242, 78, 30, 0.3);
             box-shadow: 0 0.6rem 1rem rgba(242, 78, 30, 0.3);
     border: none;
-    background: transparent; }
+    background: linear-gradient(135deg, #f24e1e, transparent); }
     nav.show-box-shadow .container button {
       color: #141415; }
     nav.show-box-shadow .container a {
@@ -859,6 +859,30 @@ nav {
   .testimonials .swiper {
     grid-template-columns: 1fr;
     width: 80vw; } }
+@media screen and (max-width: 600px) {
+  .testimonials .swiper {
+    grid-template-columns: 1fr;
+    width: 70vw;
+    height: 50vh; }
+    .testimonials .swiper .swiper-slide .client .left-side .avatar {
+      width: 2rem;
+      height: 2rem;
+      aspect-ratio: 1/1;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+      overflow: hidden; }
+    .testimonials .swiper .swiper-slide .client .left-side .client_details h5 {
+      font-size: 0.8rem; }
+    .testimonials .swiper .swiper-slide .client .left-side .client_details small {
+      font-size: 0.7rem; }
+    .testimonials .swiper .swiper-slide .client .right-side i {
+      color: gold;
+      font-size: 0.6rem; }
+    .testimonials .swiper .swiper-slide p {
+      margin-top: 1rem; } }
 .contact {
   background: url(../images/contact.jpg) no-repeat center center/cover;
   padding: 0;
