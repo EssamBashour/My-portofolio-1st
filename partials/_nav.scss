@@ -16,7 +16,8 @@ nav {
     &.show-box-shadow {
         box-shadow: 0 0.6rem 1rem $praimary-color-variant;
         border: none;
-        background: transparent;
+        background: linear-gradient(135deg, $primary-color, transparent);
+        ;
 
 
         .container {

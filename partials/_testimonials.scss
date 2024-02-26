@@ -97,6 +97,65 @@
         .swiper {
             grid-template-columns: 1fr;
             width: 80vw;
+
+        }
+    }
+}
+
+@media screen and(max-width: 600px) {
+    .testimonials {
+        .swiper {
+            grid-template-columns: 1fr;
+            width: 70vw;
+            height: 50vh;
+
+            .swiper-slide {
+
+                .client {
+
+                    .left-side {
+
+                        .avatar {
+                            width: 2rem;
+                            height: 2rem;
+                            aspect-ratio: 1/1;
+                            border-radius: 50%;
+                            -webkit-border-radius: 50%;
+                            -moz-border-radius: 50%;
+                            -ms-border-radius: 50%;
+                            -o-border-radius: 50%;
+                            overflow: hidden;
+                        }
+
+                        .client_details {
+                            h5 {
+                                font-size: 0.8rem;
+                            }
+
+                            small {
+                                font-size: 0.7rem;
+                            }
+
+
+                        }
+                    }
+
+                    .right-side {
+                        i {
+                            color: gold;
+                            font-size: 0.6rem;
+                        }
+                    }
+
+
+                }
+
+                p {
+                    margin-top: 1rem;
+                }
+
+
+            }
         }
     }
 }
